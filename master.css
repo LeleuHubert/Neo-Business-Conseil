@@ -1,0 +1,458 @@
+* {
+  transition: 2s ease;
+  text-align: center;
+}
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "fontTitle";
+  src: url('media/font/police/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: "TitleWS";
+  src: url('media/font/police/ubuntu-title.ttf');
+}
+@font-face {
+  font-family: "BoldItalic";
+  src: url('media/font/police/OpenSans-BoldItalic.ttf');
+}
+@font-face {
+  font-family: "special";
+  src: url('media/font/police/special.ttf');
+}
+
+/* NAVBAR & FOOTER ######################################*/
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.icone {
+  height: 30px;
+}
+.rev {
+  filter: invert(100%);
+}
+.copyright {
+  font-size: 0.9rem;
+}
+#logo {
+  color: white;
+}
+footer {
+  background-color: black;
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+}
+footer span {
+  color: white;
+}
+
+/* SECTION ######################################*/
+.sec, .slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.sec00 {
+  background-image: url("media/bg-sections/bg-illu.jpg");
+}
+.sec01 {
+  background-image: url("media/bg-sections/bg-team.jpg");
+}
+.sec02 {
+  background-image: url('media/bg-sections/bg-purpose.jpg');
+}
+.sec03 {
+  background-image: url("media/bg-sections/bg-solution.jpg");
+}
+.sec04 {
+  background-image: url("media/bg-sections/bg-clients.jpg");
+}
+.sec05 {
+  background-image: url('media/bg-sections/bg-foinus.jpg');
+}
+.sec06 {
+  background-image: url("media/bg-sections/bg-contact.jpg");
+}
+
+/* POSITION & RESPONSIVE ######################################*/
+.master {
+  display: flex;
+}
+.slave {
+  margin: auto;
+}
+.master_H {
+  text-align: center;
+}
+.slave_H {
+  display: inline-block;
+}
+
+@media screen and (max-width: 2000px) {
+  h1 {
+    font-family: 'TitleWS';
+    color: white;
+    font-size: 120px;
+  }
+  h2 {
+    font-family: 'BoldItalic';
+    color: white;
+    font-size: 40px;
+  }
+  h3 {
+    font-family: 'BoldItalic';
+    color: white;
+    font-size: 20px;
+  }
+  h4 {
+    font-family: 'special';
+    color: black;
+    font-size: 2.3vw;
+  }
+  a, p {
+    font-family: fontMaster;
+    cursor: pointer;
+    color: white;
+  }
+  span {
+    color: white;
+  }
+
+  .MasterBox {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: inset;
+    border-color: white;
+    height: 60vh;
+    width : 50vw;
+    left : 50%;
+    margin-left : -25vw;
+    top : 15vh;
+  }
+
+  .panelTeam {
+    padding-top: 25vh;
+    width: 100vw;
+  }
+  .panelTeam h2 {
+    color: black;
+    font-size: 25px;
+  }
+  .panelTeam h3 {
+    color: black;
+  }
+
+  .frame-profil {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 400px;
+    border-radius: 10%;
+  }
+  .frame-pic {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .frame-pic img {
+    border-radius: 50%;
+    width: 9vw;
+  }
+  .frame-contact, .frame-info {
+    width: 70%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .frame-contact:hover, .frame-info:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .frame-info {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+  .sizeMed {
+    display: none;
+  }
+
+  .BoxTextOne {
+    position : absolute;
+    width: 1000px;
+    margin-left : -500px;
+    left : 50%;
+    top : 350px;
+  }
+
+  .panelIcone {
+    padding-top: 35vh;
+    width: 100%;
+    height: 300px;
+  }
+  .panelIcone img {
+    width: 90px;
+    filter: invert(1);
+  }
+  .clic--icone {
+    cursor: pointer;
+    height: 100%;
+  }
+  .clic--icone:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .ClicUP {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .MoreInfo{
+    width: 50%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .MoreInfo:hover {
+    width: 70%;
+  }
+  .txt-container {
+    width: 50%;
+  }
+  .go-back {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .go-back img {
+    width: 40px;
+    transform: rotate(180deg);
+    filter: invert(1);
+  }
+
+  .container-scroll {
+    overflow-x: scroll;
+  }
+  .panel {
+    margin-top: 10px;
+    width: 100%;
+    height: 29vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  .panel:hover {
+    transition: 0s ease;
+    border-color: white;
+    border-style: inset;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 1;
+  }
+  .PopUp {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .PopUpText {
+    background-color: black;
+    width: 50%;
+    height: 50%;
+  }
+
+  .section {
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 900px;
+    max-width: 80%;
+    border: 2px solid black;
+    border-top: none;
+    text-align: center;
+  }
+  .section h1 {
+    position: relative;
+    margin-top: -14px;
+    display: inline-block;
+    letter-spacing: 4px;
+  }
+  .kit h2, .kit p {
+    color: black;
+  }
+  .kit p a {
+    color: blue;
+    text-decoration: none;
+  }
+  .top-border{
+    position: absolute;
+    height: 2px;
+    width: 24%;
+    background-color: black;
+  }
+  .right {
+    right: 0;
+  }
+  .left {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section h1 {
+    margin-top: 7px;
+  }
+  .MasterBox h1 {
+    font-size: 80px;
+  }
+  .MasterBox h2 {
+    font-size: 20px;
+  }
+  .panelTeam {
+    padding-top: 0;
+    height: 91.5vh;
+    overflow: scroll;
+  }
+  .frame-profil {
+    margin-bottom: 10px;
+    width: 55vw;
+    height: 45vh;
+  }
+  .frame-pic {
+    padding-top: 30px;
+  }
+  .frame-pic img {
+    width: 11vw;
+  }
+  .frame-contact {
+    margin-bottom: 10px;
+  }
+  .sizeMed {
+    display: block;
+  }
+  .sizeLar {
+    display: none;
+  }
+  .BoxTextOne {
+    position: inherit;
+    margin-left: 2.5vw;
+    padding-top: 30vh;
+    width: 95vw;
+  }
+  .BoxTextOne h3 {
+    font-size: 25px;
+  }
+  .panelIcone {
+    padding-top: 38vh;
+    height: 20vh;
+  }
+  .clic--icone h2 {
+    font-size: 18px;
+  }
+  .clic--icone img {
+    width: 120px;
+  }
+  .ClicUP {
+    height: 91.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .txt-container h3 {
+    font-size: 18px;
+  }
+  .go-back {
+    position: inherit;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+  }
+  .panelSolution {
+    height: 85vh;
+  }
+  .PopUp {
+    height: 92vh;
+  }
+  .PopUpText {
+    overflow: scroll;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 90vw;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .frame-profil {
+    width: 90vw;
+  }
+  .frame-pic img {
+    width: 15vw;
+  }
+  .sizeMed {
+    display: none;
+  }
+  .sizeLar {
+    display: block;
+  }
+  .BoxTextOne h3 {
+    font-size: 18px;
+  }
+  .panelIcone {
+    padding-top: 0;
+    height: 85vh;
+  }
+  .PopUp {
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .MasterBox {
+    width : 90vw;
+    margin-left : -45vw;
+  }
+  .frame-pic img {
+    width: 20vw;
+  }
+  .clic--icone img {
+    width: 18vw;
+  }
+  .PopUp {
+    height: 85vh;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .frame-profil {
+    height: 32vh;
+  }
+  .frame-pic {
+    display: none;
+  }
+  .BoxTextOne {
+    padding-top: 10vh;
+  }
+  .panelTeam {
+    height: 84.5vh;
+  }
+  .clic--icone img {
+    width: 15vw;
+  }
+  .ClicUP {
+    height: 86.5vh;
+  }
+}
