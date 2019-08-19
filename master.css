@@ -73,8 +73,28 @@ footer span {
   background-image: url('media/bg-sections/bg-purpose.jpg');
 }
 .sec03 {
-  background-image: url("media/bg-sections/bg-solution.jpg");
+  background-color: black;
 }
+#sol-01 {
+  background-image: url("media/bg-sections/sol-01.jpg");
+}
+#sol-02 {
+  background-image: url("media/bg-sections/sol-02.jpg");
+}
+#sol-03 {
+  background-image: url("media/bg-sections/sol-03.jpg");
+}
+#sol-04 {
+  background-image: url("media/bg-sections/sol-04.jpg");
+}
+#sol-05 {
+  background-image: url("media/bg-sections/sol-05.jpg");
+}
+#sol-06 {
+  background-image: url("media/bg-sections/sol-06.jpg");
+}
+
+
 .sec04 {
   background-image: url("media/bg-sections/bg-clients.jpg");
 }
@@ -192,51 +212,31 @@ footer span {
     top : 350px;
   }
 
-  .panelIcone {
-    padding-top: 35vh;
+  .panel-Services {
+    height: 90vh;
+    overflow: scroll;
+  }
+  .panelServices {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
     width: 100%;
-    height: 300px;
-  }
-  .panelIcone img {
-    width: 90px;
-    filter: invert(1);
-  }
-  .clic--icone {
+    height: 90vh;
+    opacity: 0.5;
     cursor: pointer;
-    height: 100%;
   }
-  .clic--icone:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+  .panelServices:hover {
+    opacity: 1;
   }
-  .ClicUP {
+  .panelServices span {
+    position: absolute;
+    width: 80% ;height: 50px;
+    top: 50%; left: 50%;
+    margin-top: -25px; margin-left: -40%;
+    color: white;
+    font-family: "BoldItalic";
     background-color: rgba(0, 0, 0, 0.7);
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  .MoreInfo{
-    width: 50%;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  .MoreInfo:hover {
-    width: 70%;
-  }
-  .txt-container {
-    width: 50%;
-  }
-  .go-back {
-    position: fixed;
-    top: 55px;
-    left: 0;
-    width: 50px;
-    height: 50px;
-  }
-  .go-back img {
-    width: 40px;
-    transform: rotate(180deg);
-    filter: invert(1);
   }
 
   .container-scroll {

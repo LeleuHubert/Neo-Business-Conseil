@@ -10,20 +10,14 @@
   <meta name="description" content="the best solution to push your projects forward">
   <script type="text/javascript">
   function SwitchClass(param1, param2){
-    var elm = document.getElementsByClassName(param2);
-    for (var i = 0; i < elm.length; i ++) {
-      elm[i].style.display = 'none';
+    var hide = document.getElementsByClassName(param2);
+    var show = document.getElementsByClassName(param1);
+    for (var i = 0; i < hide.length; i ++) {
+      hide[i].style.display = 'none';
     }
-    DisplayClass(param1);
-  }
-  function DisplayClass(param1){
-    var elm = document.getElementsByClassName(param1);
-    for (var i = 0; i < elm.length; i ++) {
-      elm[i].style.display = '';
+    for (var i = 0; i < show.length; i ++) {
+      show[i].style.display = '';
     }
-  }
-  function switchStyle(style){
-    document.getElementById("mycss").setAttribute("href", style);
   }
   </script>
 
@@ -231,217 +225,80 @@
     </div>
   </section>
   <section class="sec sec03" style="display:none;">
-    <div class="ClicUP ClicUP01 master container-scroll" style="display:none;">
-      <div class="slave">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="go-back" onclick="SwitchClass('panelIcone', 'ClicUP')">
-              <img src="media/layout/cross.png" alt="go back">
-            </div>
-          </div>
+    <div class="panel-Services">
+      <div class="PopUp PU01 master" onclick="SwitchClass('','PopUp')" style="display:none;">
+        <div class="slave PopUpText">
+          <h2>Pop-up 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis risus ut lectus vestibulum, id tempor sapien rutrum. Etiam varius, ante in vestibulum luctus, elit nisi posuere purus, a blandit purus nunc non nulla. Pellentesque sagittis ullamcorper diam eu viverra. Phasellus convallis, velit vitae molestie imperdiet, mi dui tristique tortor, ac tincidunt mauris lacus id quam. Mauris nisi nulla, pulvinar vel odio et, efficitur fringilla nisl. Aliquam sed pellentesque nisl. Fusce massa velit, lacinia finibus justo sit amet, auctor tristique ligula. In hac habitasse platea dictumst. In ut purus vitae risus hendrerit consequat sit amet eget nulla. In eu mauris tellus. Nulla nunc est, placerat nec rhoncus eu, elementum viverra sapien. Sed blandit ex at mauris scelerisque semper. Suspendisse vel tortor est.</p>
         </div>
-        <div class="row">
-          <div class="col-sm-12 master">
-            <div class="slave txt-container">
-              <div class="ang">
-                <h3>ASSISTANCE IN CHOOSING YOUR NETWORK INFRASTRUCTURE</h3>
-                <p>After a precise definition of the needs and business activities, NEO Business Conseil helps you choose the network infrastructure that best
-                  suits your company. Neo Business Conseil also intervenes in the context of public procurement for local authorities in order to combine expertise in
-                  public procurement law and optimization of LAN/MAN and WAN contracts.Feel free to use our services for the choice and implementation
-                  of your network infrastructure or simply to talk with one of our experts.Use NEO Business Conseil.
-                </p>
-              </div>
-              <div class="fra" style="Display:none;">
-                <h3>ACCOMPAGNEMENT POUR LE CHOIX DE VOTRE INFRASTRUCTURE RÉSEAU</h3>
-                <p>Apres définition précise des besoins et des activités métiers, NEO Business Conseil vous accompagne dans le choix de l’infrastructure réseau qui conviens le mieux
-                  à votre entreprise. Neo Business Conseil intervient egalement dans le cadre des marche public pour des collectivité locale afin d’allier compétences en droits
-                  des marche public et optimisation des contrats LAN/MAN et WAN. N’hésitez pas à recourir à nos services pour le choix et la mise en place de votre
-                  infrastructure réseau ou tout simplement pour échanger avec l’un de nos experts. Faites appel à NEO Business Conseil.
-                </p>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="PopUp PU02 master" onclick="SwitchClass('','PopUp')" style="display:none;">
+        <div class="slave PopUpText">
+          <h2>Pop-up 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis risus ut lectus vestibulum, id tempor sapien rutrum. Etiam varius, ante in vestibulum luctus, elit nisi posuere purus, a blandit purus nunc non nulla. Pellentesque sagittis ullamcorper diam eu viverra. Phasellus convallis, velit vitae molestie imperdiet, mi dui tristique tortor, ac tincidunt mauris lacus id quam. Mauris nisi nulla, pulvinar vel odio et, efficitur fringilla nisl. Aliquam sed pellentesque nisl. Fusce massa velit, lacinia finibus justo sit amet, auctor tristique ligula. In hac habitasse platea dictumst. In ut purus vitae risus hendrerit consequat sit amet eget nulla. In eu mauris tellus. Nulla nunc est, placerat nec rhoncus eu, elementum viverra sapien. Sed blandit ex at mauris scelerisque semper. Suspendisse vel tortor est.</p>
         </div>
-        <div class="row">
-          <div class="col-lg-3 master_H">
-            <h3 class="ang"> The LAN network </h3>
-            <h3 class="fra" style="display:none;"> Le réseau LAN </h3>
+      </div>
+      <div class="PopUp PU03 master" onclick="SwitchClass('','PopUp')" style="display:none;">
+        <div class="slave PopUpText">
+          <h2>Pop-up 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis risus ut lectus vestibulum, id tempor sapien rutrum. Etiam varius, ante in vestibulum luctus, elit nisi posuere purus, a blandit purus nunc non nulla. Pellentesque sagittis ullamcorper diam eu viverra. Phasellus convallis, velit vitae molestie imperdiet, mi dui tristique tortor, ac tincidunt mauris lacus id quam. Mauris nisi nulla, pulvinar vel odio et, efficitur fringilla nisl. Aliquam sed pellentesque nisl. Fusce massa velit, lacinia finibus justo sit amet, auctor tristique ligula. In hac habitasse platea dictumst. In ut purus vitae risus hendrerit consequat sit amet eget nulla. In eu mauris tellus. Nulla nunc est, placerat nec rhoncus eu, elementum viverra sapien. Sed blandit ex at mauris scelerisque semper. Suspendisse vel tortor est.</p>
+        </div>
+      </div>
+      <div class="PopUp PU04 master" onclick="SwitchClass('','PopUp')" style="display:none;">
+        <div class="slave PopUpText">
+          <h2>Pop-up 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis risus ut lectus vestibulum, id tempor sapien rutrum. Etiam varius, ante in vestibulum luctus, elit nisi posuere purus, a blandit purus nunc non nulla. Pellentesque sagittis ullamcorper diam eu viverra. Phasellus convallis, velit vitae molestie imperdiet, mi dui tristique tortor, ac tincidunt mauris lacus id quam. Mauris nisi nulla, pulvinar vel odio et, efficitur fringilla nisl. Aliquam sed pellentesque nisl. Fusce massa velit, lacinia finibus justo sit amet, auctor tristique ligula. In hac habitasse platea dictumst. In ut purus vitae risus hendrerit consequat sit amet eget nulla. In eu mauris tellus. Nulla nunc est, placerat nec rhoncus eu, elementum viverra sapien. Sed blandit ex at mauris scelerisque semper. Suspendisse vel tortor est.</p>
+        </div>
+      </div>
+      <div class="PopUp PU05 master" onclick="SwitchClass('','PopUp')" style="display:none;">
+        <div class="slave PopUpText">
+          <h2>Pop-up 5</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis risus ut lectus vestibulum, id tempor sapien rutrum. Etiam varius, ante in vestibulum luctus, elit nisi posuere purus, a blandit purus nunc non nulla. Pellentesque sagittis ullamcorper diam eu viverra. Phasellus convallis, velit vitae molestie imperdiet, mi dui tristique tortor, ac tincidunt mauris lacus id quam. Mauris nisi nulla, pulvinar vel odio et, efficitur fringilla nisl. Aliquam sed pellentesque nisl. Fusce massa velit, lacinia finibus justo sit amet, auctor tristique ligula. In hac habitasse platea dictumst. In ut purus vitae risus hendrerit consequat sit amet eget nulla. In eu mauris tellus. Nulla nunc est, placerat nec rhoncus eu, elementum viverra sapien. Sed blandit ex at mauris scelerisque semper. Suspendisse vel tortor est.</p>
+        </div>
+      </div>
+      <div class="PopUp PU06 master" onclick="SwitchClass('','PopUp')" style="display:none;">
+        <div class="slave PopUpText">
+          <h2>Pop-up 6</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis risus ut lectus vestibulum, id tempor sapien rutrum. Etiam varius, ante in vestibulum luctus, elit nisi posuere purus, a blandit purus nunc non nulla. Pellentesque sagittis ullamcorper diam eu viverra. Phasellus convallis, velit vitae molestie imperdiet, mi dui tristique tortor, ac tincidunt mauris lacus id quam. Mauris nisi nulla, pulvinar vel odio et, efficitur fringilla nisl. Aliquam sed pellentesque nisl. Fusce massa velit, lacinia finibus justo sit amet, auctor tristique ligula. In hac habitasse platea dictumst. In ut purus vitae risus hendrerit consequat sit amet eget nulla. In eu mauris tellus. Nulla nunc est, placerat nec rhoncus eu, elementum viverra sapien. Sed blandit ex at mauris scelerisque semper. Suspendisse vel tortor est.</p>
+        </div>
+      </div>
 
-            <div class="slave_H MoreInfo MI01" onclick="SwitchClass('definition01', 'MI01')">
-              <span>- Definition -</span>
-            </div>
-            <div class="definition definition01" style="display:none;">
-              <div class="ang">
-                <p>(Local Area Network or local network) This type of Infrastructure is mainly based on distribution switches and copper cables (RJ45 sockets) on which PCs, users or servers will be connected, but also VoIP and ToIP phones; the cabling protocols to stay in the rules are mainly category 5 and 6 cables, which allows maximum distances between two devices of 200 meters on the same switch and therefore a few hundred meters for the same LAN network. This infrastructure is mainly if not only used within the same building, but also with which quality of service solutions can be combined to seal different network flows and allow different quality of service.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- less -</span>
-                </div>
-              </div>
-              <div class="fra" style="display:none;">
-                <p>(Local Area Network ou réseau local) Ce type d’Infrastructure repose principalement sur des switch de distribution et des câbles cuivres (prises RJ45) sur lesquels seront connecté des PC, utilisateurs ou serveurs, mais egalement des téléphones VoIP et ToIP ; les protocoles de câblage pour rester dans les règles de l’art sont principalement des câbles en catégorie 5 et 6, ce qui permet des distances maximum entre deux équipement de 200 mètres sur un même switch et donc quelques centaines de mètres pour une même réseau LAN. Cette infrastructure est principalement si non uniquement utilise dans la cadre d’un même bâtiment, et auquel pourront être associé des solutions de qualité de service permettant d’étanchéifier des flux réseau différents et permettre des qualité de service differents.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- retour -</span>
-                </div>
-              </div>
-            </div>
 
-          </div>
-          <div class="col-lg-3 master_H">
-            <h3 class="ang">The WLAN network</h3>
-            <h3 class="fra" style="display:none;">Le réseau WLAN</h3>
-
-            <div class="slave_H MoreInfo MI02" onclick="SwitchClass('definition02', 'MI02')">
-              <span>- Definition -</span>
-            </div>
-            <div class="definition definition02" style="display:none;">
-              <div class="ang">
-                <p>(Wireless LAN) is a wireless local area network that uses radio waves to ensure the flow of information between equipment connected to each other over a hundred meters. It is identical to LAN but does not require the use of a cable. There are several competing Wifi 802.11 technologies supported by the WECA (Wireless Ethernet Compatibility Alliance) which offers data rates of up to 54 Mbps over several hundred meters. The hiperLAN2 (High performance Radio LAN 2.0) technology, a European standard developed by the ETSI (European Telecommunications Standards Institute), allows a theoretical throughput of 54 Mbps over an area of about 100 metres in the frequency range between 5 150 and 5 300 MHz.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- less -</span>
-                </div>
-              </div>
-              <div class="fra" style="display:none;">
-                <p>(Wireless LAN) est quant à lui un réseau local sans fil qui utilise des ondes radio afin de garantir la circulation d’informations entre les équipements reliés entre eux sur une centaine de metre. Il est identique au LAN mais ne nécessite pas l’utilisation d’un câble. Il  existe plusieurs technologie concurrente Wifi 802.11 soutenu par l’’alliance WECA (Wireless Ethernet Compatibility Alliance) qui offre des debits allant jusqu’à 54 Mbps sur plusieurs centaines de metres. La technologie hiperLAN2 (High performance Radio LAN 2.0) norme européenne élaborée par  l’ETSI (Européean Telecommunications Standards Institute) permettant d’atteindre un débit theorique de 54 Mbps sur une zone d’une centaine de mètres dans la gamme de fréquence comprise entre 5 150 et 5 300 MHz.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- retour -</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 master_H">
-            <h3 class="ang">The MAN network</h3>
-            <h3 class="fra" style="display:none;">Le réseau MAN</h3>
-
-            <div class="slave_H MoreInfo MI03" onclick="SwitchClass('definition03', 'MI03')">
-              <span>- Definition -</span>
-            </div>
-            <div class="definition definition03" style="display:none;">
-              <div class="ang">
-                <p>(Metropolitan Area Network) This is a broadband network that connects several LANs that are geographically close. This infrastructure is based on high-performance routers, leased lines or possibly private optical fibres. These infrastructures for interconnecting buildings in the same city or campus make it possible to have much higher transmission rates than on the Internet.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- less -</span>
-                </div>
-              </div>
-              <div class="fra" style="display:none;">
-                <p>(Metropolitan Area Network ou réseau local) Il s’agit d’un réseau large bande qui permet de relier plusieurs réseau LAN qui sont tout de même géographiquement proche. Cette infrastructure repose sur des routeurs hautes performances , des lignes louées ou des fibres optiques éventuellement privées. Ces infrastructures d’interconnexion de bâtiments d’une même ville ou d’un campus permettent d’avoir des débit de transmission bien plus important que sur Internet.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- retour -</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 master_H">
-            <h3 class="ang">The WAN network</h3>
-            <h3 class="fra" style="display:none;">Le réseau WAN</h3>
-
-            <div class="slave_H MoreInfo MI04" onclick="SwitchClass('definition04', 'MI04')">
-              <span>- Definition -</span>
-            </div>
-            <div class="definition definition04" style="display:none;">
-              <div class="ang">
-                <p>(Wide Area Network). or wide area network, is a computer network or telecommunications network covering a large geographical area, typically on the scale of a country, a continent, or the entire planet Internet is an example but these wide area networks are often owned by an organization or company operating privately or leased. The most widely used technologies are IP/MPLS (Multiprotocol Label Switching), PDH (Plesiochrone Digitale Hierarchie), SDH (Synchrone Digitale Hierarchie), SONET (Synchronous Optical Network), ATM (Asynchronous Transfer Mode) and more rarely now due to X.25 and SNA obsolescence. SDLAN technology is emerging as the future technology to replace all other technologies, providing many of the functionality and flexibility that previous technologies have sorely missed.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- less -</span>
-                </div>
-              </div>
-              <div class="fra" style="display:none;">
-                <p>(Wide Area Network). ou réseau étendu, est un réseau informatique ou un réseau de télécommunications couvrant une grande zone géographique, typiquement à l’échelle d’un pays, d’un continent, ou de la planète entière Internet constitue un exemple mais ces reseaux étendu sont souvent detenues par une organisation ou une entreprise en exploitation privés ou loués. Les technologies les plus utilisés sont IP/MPLS (Multiprotocol Label Switching ), PDH (Plesiochrone Digitale Hierarchie), SDH (Synchrone Digitale Hierarchie), SONET (Synchronous Optical Network), ATM (Asynchronous Transfer Mode) et plus rarement désormais pour cause d’obsolescence  X.25 et SNA. La technologie SDLAN est en train de s’imposer comme la futur technologie en remplacement de toutes les autres technologie, apportant nombre de fonctionnalité et flexibilité qui manquée grandement aux technologies précedentes.</p>
-                <div class="slave_H MoreInfo" onclick="SwitchClass('MoreInfo', 'definition')">
-                  <span>- retour -</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ClicUP ClicUP02" style="display:none;">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="go-back" onclick="SwitchClass('panelIcone', 'ClicUP')">
-            <img src="media/layout/cross.png" alt="go back">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ClicUP ClicUP03" style="display:none;" >
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="go-back" onclick="SwitchClass('panelIcone', 'ClicUP')">
-            <img src="media/layout/cross.png" alt="go back">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ClicUP ClicUP04" style="display:none;" >
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="go-back" onclick="SwitchClass('panelIcone', 'ClicUP')">
-            <img src="media/layout/cross.png" alt="go back">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ClicUP ClicUP05" style="display:none;" >
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="go-back" onclick="SwitchClass('panelIcone', 'ClicUP')">
-            <img src="media/layout/cross.png" alt="go back">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ClicUP ClicUP06" style="display:none;">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="go-back" onclick="SwitchClass('panelIcone', 'ClicUP')">
-            <img src="media/layout/cross.png" alt="go back">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="panelIcone">
       <div class="row">
         <div class="col-lg-2">
-          <div class="clic--icone" onclick="SwitchClass('ClicUP01', 'panelIcone')">
-            <img src="media/layout/network.png" alt="network">
-            <h2 class="ang">communication infrastructure <br> Lan / Man / Wan</h2>
-            <h2 class="fra" style="display:none;">infrastructure de communication <br> Lan / Man / Wan</h2>
+          <div class="panelServices" id="sol-01" onclick="SwitchClass('PU01','')">
+            <span class="ang">communication infrastructure<br>Lan / Man / Wan</span>
+            <span class="fra" style="display:none;">Infrastructure réseau<br>Lan / Man / Wan</span>
           </div>
         </div>
         <div class="col-lg-2">
-          <div class="clic--icone" onclick="SwitchClass('ClicUP02', 'panelIcone')">
-            <img src="media/layout/data.png" alt="data">
-            <h2 class="ang">Storage & data management</h2>
-            <h2 class="fra" style="display:none;">Management des données & stockage</h2>
+          <div class="panelServices" id="sol-02" onclick="SwitchClass('PU02', '')">
+            <span class="ang">Storage & data management</span>
+            <span class="fra" style="display:none;">Stockage & gestion de données</span>
           </div>
         </div>
         <div class="col-lg-2">
-          <div class="clic--icone" onclick="SwitchClass('ClicUP03', 'panelIcone')">
-            <img src="media/layout/analyse.png" alt="analyse">
-            <h2 class="ang">Data Analyzing</h2>
-            <h2 class="fra" style="display:none;">Analyse des données</h2>
+          <div class="panelServices" id="sol-03" onclick="SwitchClass('PU03','')">
+            <span class="ang">Data Analyzing</span>
+            <span class="fra" style="display:none;">Analyse de données</span>
           </div>
         </div>
         <div class="col-lg-2">
-          <div class="clic--icone" onclick="SwitchClass('ClicUP04', 'panelIcone')">
-            <img src="media/layout/innovation.png" alt="innovation">
-            <h2 class="ang">Innovation & digital transformation</h2>
-            <h2 class="fra" style="display:none;">Innovation & Transformations digital</h2>
+          <div class="panelServices" id="sol-04" onclick="SwitchClass('PU04','')">
+            <span class="ang">Innovation & digital transformation</span>
+            <span class="fra" style="display:none;">Innovation & transformation digital</span>
           </div>
         </div>
         <div class="col-lg-2">
-          <div class="clic--icone" onclick="SwitchClass('ClicUP05', 'panelIcone')">
-            <img src="media/layout/safe.png" alt="safe">
-            <h2 class="ang">Protect and Secure</h2>
-            <h2 class="fra" style="display:none;">Protége et surveille</h2>
+          <div class="panelServices" id="sol-05" onclick="SwitchClass('PU05','')">
+            <span class="ang">Protect and Secure</span>
+            <span class="fra" style="display:none;">Protection & Securisation</span>
           </div>
         </div>
         <div class="col-lg-2">
-          <div class="clic--icone" onclick="SwitchClass('ClicUP06', 'panelIcone')">
-            <img src="media/layout/share.png" alt="share">
-            <h2 class="ang">Data share & add value creation</h2>
-            <h2 class="fra" style="display:none;">Partage de données & creation de valeur</h2>
+          <div class="panelServices" id="sol-06" onclick="SwitchClass('PU06','')">
+            <span class="ang">Data share & add value creation</span>
+            <span class="fra" style="display:none;">Partage de données & apport de valeur ajoutée</span>
           </div>
         </div>
       </div>
