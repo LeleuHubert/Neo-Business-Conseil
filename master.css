@@ -66,14 +66,11 @@ footer span {
 .sec00 {
   background-image: url("media/bg-sections/bg-illu.jpg");
 }
-.sec01 {
-  background-image: url("media/bg-sections/bg-team.jpg");
+.sec01, .sec03 {
+  background-color: black;
 }
 .sec02 {
   background-image: url('media/bg-sections/bg-purpose.jpg');
-}
-.sec03 {
-  background-color: black;
 }
 #sol-01 {
   background-image: url("media/bg-sections/sol-01.jpg");
@@ -93,8 +90,18 @@ footer span {
 #sol-06 {
   background-image: url("media/bg-sections/sol-06.jpg");
 }
-
-
+#team-01 {
+  background-image: url("media/bg-sections/bg-purpose.jpg");
+  background-position: top;
+}
+#team-02 {
+  background-image: url("media/bg-sections/bg-purpose.jpg");
+  background-position: center;
+}
+#team-03 {
+  background-image: url("media/bg-sections/bg-purpose.jpg");
+  background-position: bottom;
+}
 .sec04 {
   background-image: url("media/bg-sections/bg-clients.jpg");
 }
@@ -160,49 +167,40 @@ footer span {
     margin-left : -25vw;
     top : 15vh;
   }
-
-  .panelTeam {
-    padding-top: 25vh;
-    width: 100vw;
+  .Team {
+    overflow: scroll;
+    height: 100vh;
   }
-  .panelTeam h2 {
+  .TeamBox {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .TeamBox:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .TeamBox img {
+    position: absolute;
+    height: 250px;
+    width: 210px;
+    left: 50%; top: 20%;
+    margin-left: -105px; margin-top: -125px;
+    border-radius: 50%;
+  }
+  .TeamBox h1 {
+    padding-top: 50vh;
+    font-size: 40px;
+  }
+  .TeamBox a {
     color: black;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .TeamBox a:hover {
+    color: blue;
     font-size: 25px;
   }
-  .panelTeam h3 {
-    color: black;
-  }
 
-  .frame-profil {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 300px;
-    height: 400px;
-    border-radius: 10%;
-  }
-  .frame-pic {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-  }
-  .frame-pic img {
-    border-radius: 50%;
-    width: 9vw;
-  }
-  .frame-contact, .frame-info {
-    width: 70%;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-  .frame-contact:hover, .frame-info:hover {
-    background-color: rgba(0, 0, 0, 1);
-  }
-  .frame-info {
-    background-color: rgba(0, 0, 255, 0.5);
-  }
-  .sizeMed {
-    display: none;
-  }
 
   .BoxTextOne {
     position : absolute;
