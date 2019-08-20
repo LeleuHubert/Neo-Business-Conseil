@@ -173,7 +173,7 @@ footer span {
   }
   .TeamBox {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-color: rgba(255, 255, 255, 0.3);
   }
   .TeamBox:hover {
@@ -188,11 +188,11 @@ footer span {
     border-radius: 50%;
   }
   .TeamBox h1 {
-    padding-top: 50vh;
+    padding-top: 30vh;
     font-size: 40px;
   }
   .TeamBox a {
-    color: black;
+    color: white;
     font-size: 20px;
     text-decoration: none;
   }
@@ -392,19 +392,17 @@ footer span {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .frame-profil {
-    width: 90vw;
+@media screen and (max-width: 990px) {
+  .TeamBox {
+    height: 100vh; width: 80%;
   }
-  .frame-pic img {
-    width: 15vw;
+  .TeamBox:hover {
+      background-color: rgba(255, 255, 255, 0.5);
   }
-  .sizeMed {
-    display: none;
+  .TeamBox h1 {
+    padding-top: 55vh;
   }
-  .sizeLar {
-    display: block;
-  }
+
   .BoxTextOne h3 {
     font-size: 18px;
   }
@@ -415,6 +413,8 @@ footer span {
   .PopUp {
     height: 85vh;
   }
+
+
 }
 
 @media screen and (max-width: 700px) {
