@@ -63,14 +63,14 @@ footer span {
   background-size: cover;
   height: 100%;
 }
-.sec00 {
+.sec00, .sec01, .sec04 {
   background-image: url("media/bg-sections/bg-illu.jpg");
-}
-.sec01, .sec03 {
-  background-color: black;
 }
 .sec02 {
   background-image: url('media/bg-sections/bg-purpose.jpg');
+}
+.sec03 {
+  background-color: black;
 }
 #sol-01 {
   background-image: url("media/bg-sections/sol-01.jpg");
@@ -102,14 +102,8 @@ footer span {
   background-image: url("media/bg-sections/bg-purpose.jpg");
   background-position: bottom;
 }
-.sec04 {
-  background-image: url("media/bg-sections/bg-clients.jpg");
-}
 .sec05 {
-  background-image: url('media/bg-sections/bg-foinus.jpg');
-}
-.sec06 {
-  background-image: url("media/bg-sections/bg-contact.jpg");
+  background: linear-gradient(to bottom right, #a55a0b, white);
 }
 
 /* POSITION & RESPONSIVE ######################################*/
@@ -161,29 +155,34 @@ footer span {
     background-color: rgba(0, 0, 0, 0.5);
     border-style: inset;
     border-color: white;
+    border-radius: 50%;
     height: 60vh;
     width : 50vw;
     left : 50%;
     margin-left : -25vw;
     top : 15vh;
   }
+  .sec02 .MasterBox {
+    border-radius: 40%;
+  }
   .Team {
     overflow: scroll;
     height: 100vh;
   }
   .TeamBox {
-    width: 100%;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.3);
+    width: 400px;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20%;
   }
   .TeamBox:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .TeamBox img {
     position: absolute;
     height: 250px;
     width: 210px;
-    left: 50%; top: 20%;
+    left: 50%; top: 40%;
     margin-left: -105px; margin-top: -125px;
     border-radius: 50%;
   }
@@ -200,16 +199,6 @@ footer span {
     color: blue;
     font-size: 25px;
   }
-
-
-  .BoxTextOne {
-    position : absolute;
-    width: 1000px;
-    margin-left : -500px;
-    left : 50%;
-    top : 350px;
-  }
-
   .panel-Services {
     height: 90vh;
     overflow: scroll;
@@ -236,7 +225,6 @@ footer span {
     font-family: "BoldItalic";
     background-color: rgba(0, 0, 0, 0.7);
   }
-
   .container-scroll {
     overflow-x: scroll;
   }
@@ -244,15 +232,19 @@ footer span {
     margin-top: 10px;
     width: 100%;
     height: 29vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
     opacity: 0.4;
     cursor: pointer;
+    border-radius: 50%;
+  }
+  .panel h2 {
+    color: black;
   }
   .panel:hover {
     transition: 0s ease;
     border-color: white;
     border-style: inset;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.9);
     opacity: 1;
   }
   .PopUp {
@@ -269,80 +261,14 @@ footer span {
     width: 50%;
     height: 50%;
   }
-
-  .section {
-    position: absolute;
-    top: 35vh;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 900px;
-    max-width: 80%;
-    border: 2px solid black;
-    border-top: none;
-    text-align: center;
-  }
-  .section h1 {
-    position: relative;
-    margin-top: -14px;
-    display: inline-block;
-    letter-spacing: 4px;
-  }
-  .kit h2, .kit p {
-    color: black;
-  }
-  .kit p a {
-    color: blue;
-    text-decoration: none;
-  }
-  .top-border{
-    position: absolute;
-    height: 2px;
-    width: 24%;
-    background-color: black;
-  }
-  .right {
-    right: 0;
-  }
-  .left {
-    left: 0;
-  }
 }
 
 @media screen and (max-width: 1200px) {
-  .section h1 {
-    margin-top: 7px;
-  }
   .MasterBox h1 {
     font-size: 80px;
   }
   .MasterBox h2 {
     font-size: 20px;
-  }
-  .panelTeam {
-    padding-top: 0;
-    height: 91.5vh;
-    overflow: scroll;
-  }
-  .frame-profil {
-    margin-bottom: 10px;
-    width: 55vw;
-    height: 45vh;
-  }
-  .frame-pic {
-    padding-top: 30px;
-  }
-  .frame-pic img {
-    width: 11vw;
-  }
-  .frame-contact {
-    margin-bottom: 10px;
-  }
-  .sizeMed {
-    display: block;
-  }
-  .sizeLar {
-    display: none;
   }
   .BoxTextOne {
     position: inherit;
@@ -353,30 +279,28 @@ footer span {
   .BoxTextOne h3 {
     font-size: 25px;
   }
-  .panelIcone {
-    padding-top: 38vh;
-    height: 20vh;
+  .Team {
+    display: inline;
   }
-  .clic--icone h2 {
-    font-size: 18px;
+  .TeamBox {
+    width: 97vw; height: 28vh;
+    border-radius: 0%;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
-  .clic--icone img {
-    width: 120px;
+  .TeamBox img {
+    left: 50%; top: 50%;
+    margin-left: -105px; margin-top: -125px;
+    border-radius: 50%;
   }
-  .ClicUP {
-    height: 91.5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+  .TeamBox h1 {
+    padding-top: 8vh;
+    font-size: 40px;
   }
-  .txt-container h3 {
-    font-size: 18px;
+  .TeamBox hr {
+    display: none;
   }
-  .go-back {
-    position: inherit;
-    width: 100%;
-    height: 8vh;
-    top: 0;
-  }
+
   .panelSolution {
     height: 85vh;
   }
@@ -392,41 +316,28 @@ footer span {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   .TeamBox {
-    height: 100vh; width: 80%;
-  }
-  .TeamBox:hover {
-      background-color: rgba(255, 255, 255, 0.5);
+    width: 70vw; height: 30vh;
   }
   .TeamBox h1 {
-    padding-top: 55vh;
+    padding-top: 10vh;
   }
-
+  .TeamBox img {
+    display: none;
+  }
   .BoxTextOne h3 {
     font-size: 18px;
-  }
-  .panelIcone {
-    padding-top: 0;
-    height: 85vh;
   }
   .PopUp {
     height: 85vh;
   }
-
-
 }
 
 @media screen and (max-width: 700px) {
   .MasterBox {
     width : 90vw;
     margin-left : -45vw;
-  }
-  .frame-pic img {
-    width: 20vw;
-  }
-  .clic--icone img {
-    width: 18vw;
   }
   .PopUp {
     height: 85vh;
@@ -435,22 +346,10 @@ footer span {
 }
 
 @media screen and (max-width: 500px) {
-  .frame-profil {
-    height: 32vh;
-  }
-  .frame-pic {
-    display: none;
-  }
   .BoxTextOne {
     padding-top: 10vh;
   }
   .panelTeam {
     height: 84.5vh;
-  }
-  .clic--icone img {
-    width: 15vw;
-  }
-  .ClicUP {
-    height: 86.5vh;
   }
 }
