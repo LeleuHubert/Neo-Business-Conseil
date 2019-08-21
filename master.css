@@ -63,7 +63,7 @@ footer span {
   background-size: cover;
   height: 100%;
 }
-.sec00, .sec01, .sec04 {
+.sec00, .sec01, .sec04, .sec05 {
   background-image: url("media/bg-sections/bg-illu.jpg");
 }
 .sec02 {
@@ -102,9 +102,6 @@ footer span {
   background-image: url("media/bg-sections/bg-purpose.jpg");
   background-position: bottom;
 }
-.sec05 {
-  background: linear-gradient(to bottom right, #a55a0b, white);
-}
 
 /* POSITION & RESPONSIVE ######################################*/
 .master {
@@ -129,7 +126,7 @@ footer span {
   h2 {
     font-family: 'BoldItalic';
     color: white;
-    font-size: 40px;
+    font-size: 35px;
   }
   h3 {
     font-family: 'BoldItalic';
@@ -148,6 +145,11 @@ footer span {
   }
   span {
     color: white;
+  }
+
+  .logoNEO {
+    height: 200px;
+
   }
 
   .MasterBox {
@@ -260,6 +262,48 @@ footer span {
     background-color: black;
     width: 50%;
     height: 50%;
+  }
+
+  .flip-card{
+    width: 600px; height: 400px;
+    background: transparent;
+    perspective: 1000px;
+  }
+  .flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .flip-card:focus{
+    outline: 0;
+  }
+  .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .flip-card-front{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-card-back{
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
