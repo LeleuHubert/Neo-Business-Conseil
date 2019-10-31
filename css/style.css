@@ -247,6 +247,9 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    Portfolio section
 -----------------------------------------*/
+#portfolio h1 {
+	font-size: 30px;
+}
 #portfolio small {
   color: #f0f0f0;
   font-size: 10px;
@@ -294,16 +297,22 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    service section
 -----------------------------------------*/
-#service .intro img {
-  height: 300px;
-  margin-bottom: 30px;
-}
 #service .intro h3 {
   margin-bottom: 50px;
+	color: green;
+}
+#service .intro h2 {
+	color: blue;
 }
 #service .intro p {
   font-size: 15px;
   color: black;
+}
+#service ul li {
+	margin-top: 20px;
+}
+#service img {
+	height: 50px;
 }
 
 /*---------------------------------------
