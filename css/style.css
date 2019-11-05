@@ -69,11 +69,6 @@ a:hover, a:active, a:focus {
   border-color: transparent;
 }
 
-#portfolio, #about, #blog, #contact, #single-project, #blog-single-post {
-  padding-top: 80px;
-  padding-bottom: 120px;
-}
-
 .section-title {
   position: relative;
   padding-bottom: 62px;
@@ -375,41 +370,21 @@ footer {
 }
 
 @media (max-width: 767px) {
-
   h1 {
     font-size: 38px;
   }
-
   h2 {
     font-size: 32px;
     line-height: 48px;
   }
-
   h3 {
     font-size: 22px;
   }
-
-  .section-title h2 {
-    font-size: 22px;
-    line-height: 35px;
-  }
-
   .navbar-default {
     margin-top: 0px;
 
   }
-
-  #about .col-md-8 img {
-    padding-right: 0px;
-  }
-
-  #blog-single-post .blog-post-title h2 {
-    font-size: 29px;
-    line-height: 40px;
-  }
-
   footer {
 
   }
-
 }
