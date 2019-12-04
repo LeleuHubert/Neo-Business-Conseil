@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+  <script type="text/javascript">
+    function SwitchClass(param1, param2) {
+      var hide = document.getElementsByClassName(param2);
+      var show = document.getElementsByClassName(param1);
+      for (var i = 0; i < hide.length; i ++) {
+        hide[i].style.display = 'none';
+      }
+      for (var i = 0; i < show.length; i ++) {
+        show[i].style.display = '';
+      }
+    }
+  </script>
+  <title>Neo - BC | service Expertises techniques</title>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="sk-spinner sk-spinner-wordpress">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </div>
+  <div class="lang">
+    <a class="ang" style="display:none" onclick="SwitchClass('fra','ang')"><img src="../images/global/french-flag.jpg"></a>
+    <a class="fra" onclick="SwitchClass('ang','fra')" ><img src="../images/global/english-flag.jpg"></a>
+  </div>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header master">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand slave">
+          <img src="../images/global/neoIcone.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right ang" style="display:none">
+          <li class="active"><a href="../index.html">The company</a></li>
+          <li><a href="../services.html">Our services</a></li>
+          <li><a href="../team.html">Our Team</a></li>
+          <li><a href="../customers.html">Our customers</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right fra">
+          <li class="active"><a href="../index.html">L'entreprise</a></li>
+          <li><a href="../services.html">Nos services</a></li>
+          <li><a href="../team.html">L'equipe</a></li>
+          <li><a href="../customers.html">Nos clients</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="SDE" class="fra">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="section master" id="ET">
+            <h1 class="slave">Expertises techniques</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 minilist">
+            <h2>Ingénierie</h2>
+            <p>Neo Business Conseil intervient en tant qu’assistant en maitrise d’œuvre et intégration des
+              solutions applicatives, serveurs, ou d’infrastructures des clients.
+              Ces solutions nécessitent des expertises fortes sur les technologies serveurs</p>
+            <ul>
+              <li>Windows</li>
+              <li>Unix</li>
+              <li>Linux</li>
+            </ul>
+            <p>Il s’agit également de déployer des compétences sur les solutions applicatives de type :</p>
+            <ul>
+              <li>Monitoring, Supervision et d’Hypervision (Spectrum, Nagios, Shinken)</li>
+              <li>Splunk</li>
+              <li>Netshoot, Osafe </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 minilist">
+          <h2>Integration</h2>
+          <p>De la même manière NEO Business Conseil propose des compétences sur l’ensemble des
+            solutions de transmission de type</p>
+            <ul>
+              <li>Local Access Network (LAN)</li>
+              <li>MAN</li>
+              <li>WAN</li>
+              <li>Wifi</li>
+              <li>Mobile</li>
+            </ul>
+            <p> Ainsi que pour les équipements actifs d’infrastructures réseau et sécurité (commutateurs,
+              routeurs, PBX VoIP/ToIP)</p>
+            <ul>
+              <li>CISCO / Juniper / Avaya</li>
+              <li>Checkpoint/McAfee</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div id="SDE" class="ang" style="display:none;">
+
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-sm-12">
+          © 2019 - 2020 Neo - Business Conseil
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+</body>
+</html>

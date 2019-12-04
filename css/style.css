@@ -359,6 +359,9 @@ a:hover, a:active, a:focus {
 	font-weight: bold;
 	font-size: 20px;
 }
+#SDE img {
+	width: 80%;
+}
 #SDE .section {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -462,6 +465,9 @@ a:hover, a:active, a:focus {
 }
 #SDE #MT {
 	background-image: url("../images/services/MT/MT.jpg");
+}
+#SDE #ET {
+	background-image: url("../images/services/ET/ET.jpg");
 }
 
 /*---------------------------------------
