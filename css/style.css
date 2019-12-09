@@ -85,6 +85,11 @@ a:hover, a:active, a:focus {
   margin: auto;
 }
 
+@font-face {
+	font-family: "customers";
+	src: url('../fonts/customers.ttf');
+}
+
 /*---------------------------------------
     Preloader section
 -----------------------------------------*/
@@ -251,7 +256,9 @@ a:hover, a:active, a:focus {
   margin-left: -50px; margin-top: -180px;
   height: 100px; width: 100px;
 }
-
+#home .customers {
+	font-weight: bold;
+}
 /*---------------------------------------
    Portfolio section
 -----------------------------------------*/
@@ -302,7 +309,6 @@ a:hover, a:active, a:focus {
 #portfolio .text-center {
   padding-top: 62px;
 }
-
 /*---------------------------------------
    services section
 -----------------------------------------*/
@@ -333,7 +339,6 @@ a:hover, a:active, a:focus {
 #service .center p, #service .center ul li {
 	text-align: center;
 }
-
 /*---------------------------------------
    Services
 -----------------------------------------*/
@@ -361,6 +366,9 @@ a:hover, a:active, a:focus {
 }
 #SDE img {
 	width: 80%;
+}
+#SDE .title {
+	font-size: 40px;
 }
 #SDE .section {
 	background-position: center;
@@ -459,6 +467,22 @@ a:hover, a:active, a:focus {
   background-color: white;
   overflow: hidden;
 }
+.customersBrand {
+	font-family: 'customers';
+	color: black;
+	text-shadow: 0 1px 0 #eee,
+						 0 2px 0 #e5e5e5,
+						 -1px 3px 0 #C8C8C8,
+						 -1px 4px 0 #C1C1C1,
+						 -2px 5px 0 #B9B9B9,
+						 -2px 6px 0 #B2B2B2,
+						 -2px 7px 2px rgba(0,0,0, 0.6),
+						 -2px 7px 8px rgba(0,0,0, 0.2),
+						 -2px 7px 45px rgba(0,0,0, 0.4);
+}
+
+
+
 
 #SDE #DE {
 	background-image: url("../images/services/DE/DE.jpg");
