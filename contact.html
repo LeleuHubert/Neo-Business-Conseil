@@ -21,7 +21,13 @@
           show[i].style.display = '';
         }
       }
-    </script>
+  </script>
+  <script language=”JavaScript”>
+    var frmvalidator = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("email","req","Please provide your email");
+    frmvalidator.addValidation("email","email", "Please enter a valid email address");
+  </script>
 
   <title>NEO - Business Conseil | contact</title>
 </head>
@@ -71,26 +77,31 @@
             <h2 class="ang" style="display:none">We are a reactive team open to all kinds of proposals</h2>
             <h2 class="fra">Nous somme une équipe réactive et ouverte a toutes sorte de proposition</h2>
           </div>
-          <form action="mail.php" method="post">
-            <div class="col-md-6 col-sm-6">
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="telephone" class="form-control" placeholder="Phone Number">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="text" class="form-control" placeholder="Company">
-            </div>
-            <div class="col-md-12 col-sm-12">
-              <textarea class="form-control" rows="5" placeholder="Project Details"></textarea>
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <input type="submit" class="form-control" value="Send Message">
-            </div>
-          </form>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <div class="box master">
+            <a href="https://www.linkedin.com/company/neo-business-conseil/" class="slave" target="_blank">
+              <img src="images/global/linkedin.png" alt="linkedin">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box master">
+            <a href="#" class="but01 slave" onclick="SwitchClass('adrss', 'but01')">
+              <img src="images/global/mail.png" alt="mail">
+            </a>
+            <h2 class="slave adrss" style="display:none;">contact@neo-bc.com</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box master">
+            <a href="#" class="slave but02" onclick="SwitchClass('phone', 'but02')">
+              <img src="images/global/phone.png" alt="phone">
+            </a>
+            <h2 class="slave phone" style="display:none;">(+33) 6 12 96 12 12</h2>
+          </div>
         </div>
       </div>
     </div>
